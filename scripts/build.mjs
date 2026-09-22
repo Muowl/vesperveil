@@ -15,10 +15,24 @@ set(p.muted, 'editorIndentGuide.activeBackground1');
 set(p.accent, 'focusBorder', 'activityBar.activeBorder', 'tab.activeBorderTop', 'panelTitle.activeBorder', 'progressBar.background');
 set(p.keyword, 'textLink.foreground', 'textLink.activeForeground', 'list.highlightForeground', 'editorCursor.foreground', 'editorLineNumber.activeForeground');
 set(p.selection, 'list.activeSelectionBackground', 'list.inactiveSelectionBackground', 'editorSuggestWidget.selectedBackground', 'menu.selectionBackground', 'button.background');
+// Keep interactive states wine-tinted without using carmine behind small text.
+set(p.selection, 'badge.background', 'activityBarBadge.background', 'inputOption.activeBackground', 'quickInputList.focusBackground', 'terminal.selectionBackground');
+set(p.foreground, 'badge.foreground', 'activityBarBadge.foreground', 'inputOption.activeForeground', 'quickInputList.focusForeground', 'button.secondaryForeground', 'menu.selectionForeground', 'editorSuggestWidget.selectedForeground');
+set(p.hover, 'button.hoverBackground');
+set(p.surface, 'button.secondaryBackground');
+set(p.border, 'button.secondaryHoverBackground', 'inputOption.hoverBackground');
+set(p.accent, 'inputOption.activeBorder');
+set(p.keyword, 'terminalCursor.foreground');
 set(p.selection + 'CC', 'editor.selectionBackground', 'editor.inactiveSelectionBackground');
 set(p.selection + '80', 'editor.selectionHighlightBackground', 'editor.wordHighlightBackground');
-set(p.accent + '50', 'editor.findMatchBackground', 'editor.findMatchHighlightBackground');
+set(p.accent + '40', 'editor.findMatchBackground');
+set(p.accent + '20', 'editor.findMatchHighlightBackground');
 set(p.accent, 'editor.findMatchBorder');
+// A restrained three-color cycle preserves nesting cues without neon defaults.
+for (const [index, color] of [p.function, p.type, p.info, p.function, p.type, p.info].entries()) {
+  set(color, `editorBracketHighlight.foreground${index + 1}`);
+}
+set(p.error, 'editorBracketHighlight.unexpectedBracket.foreground');
 set(p.error, 'errorForeground', 'editorError.foreground', 'gitDecoration.deletedResourceForeground', 'editorGutter.deletedBackground');
 set(p.warning, 'editorWarning.foreground', 'gitDecoration.modifiedResourceForeground', 'editorGutter.modifiedBackground');
 set(p.info, 'editorInfo.foreground');
@@ -27,7 +41,11 @@ set(p.success + '18', 'diffEditor.insertedTextBackground');
 set(p.error + '18', 'diffEditor.removedTextBackground');
 set(p.selection, 'statusBar.debuggingBackground');
 set(p.foreground, 'statusBar.debuggingForeground');
-for (const [name, value] of Object.entries(p.ansi)) c['terminal.ansi' + name[0].toUpperCase() + name.slice(1)] = value;
+for (const [name, value] of Object.entries(p.ansi)) {
+  // Windows Terminal calls ANSI magenta "purple"; VS Code uses "Magenta".
+  const vscodeName = name === 'purple' ? 'Magenta' : name === 'brightPurple' ? 'BrightMagenta' : name[0].toUpperCase() + name.slice(1);
+  c['terminal.ansi' + vscodeName] = value;
+}
 const rule = (name, scope, foreground, fontStyle = '') => ({name, scope, settings: {foreground, fontStyle}});
 const tokenColors = [
   rule('Default', ['source'], p.foreground),

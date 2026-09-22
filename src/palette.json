@@ -1,6 +1,6 @@
 {
   "background": "#171316", "deep": "#110F12", "surface": "#211B20",
-  "selection": "#49313F", "border": "#3B3038", "foreground": "#E8DFDA",
+  "selection": "#49313F", "hover": "#5A3B4D", "border": "#3B3038", "foreground": "#E8DFDA",
   "muted": "#A6979F", "accent": "#C65A70", "keyword": "#DB91A3",
   "function": "#D7B77D", "type": "#B5A5CF", "string": "#A8BEA0",
   "number": "#DCAD91", "info": "#96B9CA", "error": "#F08080",

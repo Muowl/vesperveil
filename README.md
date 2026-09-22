@@ -7,8 +7,18 @@ no official artwork is included.
 ## Status
 
 Initial 0.1.0 development version. Not published to Visual Studio Marketplace or
-Open VSX. VS Code and Cursor visual verification remains pending. Publisher and
+Open VSX. Selected VS Code editor and terminal states have been visually reviewed;
+Cursor and the remaining interaction checks are still pending. Publisher and
 Open VSX namespace must be confirmed before packaging for publication.
+
+## Screenshots
+
+Real VS Code captures with Vesperveil Dark. UI zoom is increased for readability;
+file icons and language-specific decorations depend on installed extensions.
+
+![Vesperveil Dark with TypeScript](docs/screenshots/vesperveil-typescript.png)
+
+![Vesperveil Dark with Python](docs/screenshots/vesperveil-python.png)
 
 ## Preview in VS Code
 
@@ -52,7 +62,7 @@ The export contains all 16 ANSI colors, foreground, background, selection and cu
 - Review completion menus, search, diff views, errors, selections and terminal ANSI colors.
 - Confirm the existing Marketplace publisher and Open VSX namespace; add `publisher`
   to `package.json`.
-- Create an original icon and capture real editor screenshots.
+- Create an original icon; refresh the included screenshots if the theme changes.
 - Package with the official VS Code packaging tool and test the VSIX locally.
 - Publish the reviewed package to both registries.
 
