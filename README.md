@@ -6,6 +6,8 @@ A dark theme with wine-tinted surfaces, ivory text and carmine accents.
 Subtly inspired by Ronova's palette from Genshin Impact. An independent project;
 no official artwork is included.
 
+[Explore Vesperveil — palette, screenshots and details](https://muowl.dev/themes/vesperveil/)
+
 ## Installation
 
 Install the extension, then open **Preferences: Color Theme** and select
