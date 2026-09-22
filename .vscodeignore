@@ -1,8 +1,14 @@
 .git/**
 .github/**
 .vscode/**
+.gitignore
 src/**
 scripts/**
 examples/**
 ports/**
 node_modules/**
+*.vsix
+assets/*.svg
+assets/*settings.json
+assets/README.md
+docs/*.md

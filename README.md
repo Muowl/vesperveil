@@ -6,12 +6,14 @@ A dark theme with wine-tinted surfaces, ivory text and carmine accents.
 Subtly inspired by Ronova's palette from Genshin Impact. An independent project;
 no official artwork is included.
 
-## Status
+## Installation
 
-Initial 0.1.0 development version. Not published to Visual Studio Marketplace or
-Open VSX. Selected VS Code editor and terminal states have been visually reviewed;
-Cursor and the remaining interaction checks are still pending. Publisher and
-Open VSX namespace must be confirmed before packaging for publication.
+Install the extension, then open **Preferences: Color Theme** and select
+**Vesperveil Dark**. To install a downloaded `.vsix`, run
+**Extensions: Install from VSIX...** from the Command Palette.
+
+Selected VS Code editor and terminal states have been visually reviewed.
+Cursor and a full interaction review are still pending.
 
 ## Screenshots
 
@@ -52,7 +54,8 @@ or guarantee that every language grammar maps to the intended scope.
 
 ## Windows Terminal
 
-Add the object in `ports/windows-terminal/vesperveil.json` to the `schemes` array
+Download [`ports/windows-terminal/vesperveil.json`](https://github.com/Muowl/vesperveil/blob/main/ports/windows-terminal/vesperveil.json)
+from the repository and add its object to the `schemes` array
 in Windows Terminal's settings JSON. Set `colorScheme` to `Vesperveil Dark` on the
 chosen profile (or in `profiles.defaults`). Preserve existing schemes and settings.
 The export contains all 16 ANSI colors, foreground, background, selection and cursor.
@@ -62,8 +65,7 @@ The export contains all 16 ANSI colors, foreground, background, selection and cu
 - Review Python, TypeScript and Java in VS Code and Cursor, with semantic highlighting
   on and off. Inspect token scopes where grammar results differ.
 - Review completion menus, search, diff views, errors, selections and terminal ANSI colors.
-- Confirm the existing Marketplace publisher and Open VSX namespace; add `publisher`
-  to `package.json`.
+- Use the `muowl` publisher / namespace on both registries (`muowl.vesperveil`).
 - Refresh the included screenshots if the theme changes.
 - Package with the official VS Code packaging tool and test the VSIX locally.
 - Publish the reviewed package to both registries.
