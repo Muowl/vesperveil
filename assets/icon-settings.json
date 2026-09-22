@@ -1,0 +1,11 @@
+{
+  "kind": "spectral",
+  "offset": 1.4,
+  "opacity": 0.6,
+  "weight": 8,
+  "colors": "rose",
+  "enabled": true,
+  "irisEffect": true,
+  "offsetReferencePixels": 128,
+  "exportSize": 512
+}

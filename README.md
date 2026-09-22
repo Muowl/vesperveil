@@ -1,5 +1,7 @@
 # Vesperveil
 
+<img src="assets/icon.png" alt="Vesperveil icon" width="128" height="128">
+
 A dark theme with wine-tinted surfaces, ivory text and carmine accents.
 Subtly inspired by Ronova's palette from Genshin Impact. An independent project;
 no official artwork is included.
@@ -62,7 +64,7 @@ The export contains all 16 ANSI colors, foreground, background, selection and cu
 - Review completion menus, search, diff views, errors, selections and terminal ANSI colors.
 - Confirm the existing Marketplace publisher and Open VSX namespace; add `publisher`
   to `package.json`.
-- Create an original icon; refresh the included screenshots if the theme changes.
+- Refresh the included screenshots if the theme changes.
 - Package with the official VS Code packaging tool and test the VSIX locally.
 - Publish the reviewed package to both registries.
 
