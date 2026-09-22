@@ -1,0 +1,41 @@
+{
+  "name": "vesperveil",
+  "displayName": "Vesperveil",
+  "version": "0.1.0",
+  "description": "A wine-tinted dark theme with ivory text, carmine accents and restrained syntax colors.",
+  "license": "MIT",
+  "author": "Felipe Lazzarini Cunha",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dark",
+    "wine",
+    "carmine",
+    "theme"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vesperveil Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vesperveil-dark.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muowl/vesperveil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Muowl/vesperveil/issues"
+  },
+  "homepage": "https://github.com/Muowl/vesperveil#readme"
+}

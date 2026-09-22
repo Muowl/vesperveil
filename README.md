@@ -1,0 +1,67 @@
+# Vesperveil
+
+A dark theme with wine-tinted surfaces, ivory text and carmine accents.
+Subtly inspired by Ronova's palette from Genshin Impact. An independent project;
+no official artwork is included.
+
+## Status
+
+Initial 0.1.0 development version. Not published to Visual Studio Marketplace or
+Open VSX. VS Code and Cursor visual verification remains pending. Publisher and
+Open VSX namespace must be confirmed before packaging for publication.
+
+## Preview in VS Code
+
+Open this directory in VS Code and press F5 using **Preview Vesperveil**.
+In the Extension Development Host, choose **Vesperveil Dark** using
+**Preferences: Color Theme**, then open the files in `examples/`.
+Use the usual language extensions for Python and Java semantic highlighting.
+The Java fixture requires Java 17 or newer if executed; execution is not required
+for previewing the theme.
+
+The same color-theme extension is intended for Cursor, but Cursor-specific surfaces
+have not been verified. The theme changes colors only, not fonts or layout.
+Comments use italics; other syntax categories use normal font style.
+
+## Development
+
+Node.js 20 or newer; no build dependencies.
+
+```sh
+npm run build
+npm run check
+```
+
+Edit `src/palette.json` for base colors. `scripts/build.mjs` assigns semantic roles
+and generates the editor and terminal files. Do not edit generated files directly.
+Checks cover selected text/background contrast pairs, color format, comment-only
+italics, and shared ANSI values. These checks do not establish complete accessibility
+or guarantee that every language grammar maps to the intended scope.
+
+## Windows Terminal
+
+Add the object in `ports/windows-terminal/vesperveil.json` to the `schemes` array
+in Windows Terminal's settings JSON. Set `colorScheme` to `Vesperveil Dark` on the
+chosen profile (or in `profiles.defaults`). Preserve existing schemes and settings.
+The export contains all 16 ANSI colors, foreground, background, selection and cursor.
+
+## Before publication
+
+- Review Python, TypeScript and Java in VS Code and Cursor, with semantic highlighting
+  on and off. Inspect token scopes where grammar results differ.
+- Review completion menus, search, diff views, errors, selections and terminal ANSI colors.
+- Confirm the existing Marketplace publisher and Open VSX namespace; add `publisher`
+  to `package.json`.
+- Create an original icon and capture real editor screenshots.
+- Package with the official VS Code packaging tool and test the VSIX locally.
+- Publish the reviewed package to both registries.
+
+## References
+
+- https://code.visualstudio.com/api/extension-guides/color-theme
+- https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide
+- https://learn.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes
+
+## License
+
+MIT. See [LICENSE](LICENSE).

@@ -1,0 +1,23 @@
+{
+  "name": "Vesperveil Dark",
+  "background": "#171316",
+  "foreground": "#E8DFDA",
+  "cursorColor": "#DB91A3",
+  "selectionBackground": "#49313F",
+  "black": "#51434D",
+  "red": "#C97586",
+  "green": "#A8BEA0",
+  "yellow": "#D7B77D",
+  "blue": "#96AFCB",
+  "purple": "#B5A5CF",
+  "cyan": "#9CBFBE",
+  "white": "#D4CAC6",
+  "brightBlack": "#A6979F",
+  "brightRed": "#E79BAB",
+  "brightGreen": "#C1D6B7",
+  "brightYellow": "#EDD3A0",
+  "brightBlue": "#B2CBE5",
+  "brightPurple": "#CFBFE8",
+  "brightCyan": "#B8DAD7",
+  "brightWhite": "#F4ECE7"
+}
