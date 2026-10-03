@@ -1,11 +1,11 @@
 {
-  "kind": "spectral",
-  "offset": 1.4,
-  "opacity": 0.6,
-  "weight": 8,
-  "colors": "rose",
-  "enabled": true,
-  "irisEffect": true,
-  "offsetReferencePixels": 128,
+  "kind": "golden-flower",
+  "petalCount": 6,
+  "center": "hexagonal-negative-space",
+  "foreground": "#D7B77D",
+  "background": "#171316",
+  "eyeOutline": false,
+  "chromaticEffect": false,
+  "reviewedSizes": [32, 64, 128, 256],
   "exportSize": 512
 }

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Simplify the icon to a gold six-petal flower with open gaps and no eye outline
+  or chromatic offsets; review its appearance at 32, 64, 128 and 256 px.
+
 ## 0.1.0 — 2026-09-22
 
 - Add the Vesperveil icon and real VS Code screenshots.
