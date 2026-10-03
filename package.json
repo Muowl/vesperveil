@@ -2,8 +2,8 @@
   "name": "vesperveil",
   "displayName": "Vesperveil",
   "publisher": "muowl",
-  "version": "0.1.0",
-  "description": "A wine-tinted dark theme with ivory text, carmine accents and restrained syntax colors.",
+  "version": "0.2.0",
+  "description": "A wine-tinted dark theme with ivory text, carmine accents and rich syntax colors.",
   "license": "MIT",
   "author": "Felipe Lazzarini Cunha",
   "engines": {

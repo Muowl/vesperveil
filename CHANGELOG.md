@@ -1,7 +1,10 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 — 2026-10-03
 
+- Increase saturation of syntax colors and interface accents while preserving
+  dark backgrounds, ivory text, comments, selection and hover backgrounds.
+- Harmonize regular and bright ANSI colors across VS Code and Windows Terminal.
 - Simplify the icon to a gold six-petal flower with open gaps and no eye outline
   or chromatic offsets; review its appearance at 32, 64, 128 and 256 px.
 

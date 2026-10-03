@@ -47,7 +47,7 @@ Não foram concluídos testes visuais do terminal ANSI, diff, hover de botões, 
 
 Capturas reais da janela do VS Code, 1600 × 900, com zoom ampliado para leitura:
 
-- [TypeScript](screenshots/vesperveil-typescript.png)
-- [Python](screenshots/vesperveil-python.png)
+- [TypeScript — captura da versão 0.1.0](https://github.com/Muowl/vesperveil/blob/546f0b9b502eb65bc14ba89e6eed11673aedc956/docs/screenshots/vesperveil-typescript.png)
+- [Python — captura da versão 0.1.0](https://github.com/Muowl/vesperveil/blob/546f0b9b502eb65bc14ba89e6eed11673aedc956/docs/screenshots/vesperveil-python.png)
 
 As imagens foram recapturadas após os ajustes, sem recoloração ou montagem, e incluídas no README. Os dois avisos ANSI foram resolvidos. Nada foi publicado nos registries.

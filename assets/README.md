@@ -6,7 +6,8 @@ Approved variant: **Golden flower**.
   floral motif in Ronova's golden eye.
 - Open gaps separate the petals; the eye outline and chromatic offsets have
   been removed to improve recognition at small sizes.
-- Flat gold: `#D7B77D` (`function` in `src/palette.json`).
+- Flat gold: `#D7B77D`, retained from the approved icon study. The icon's gold
+  is independent of the warmer syntax gold in the 0.2.0 palette.
 - Solid background: `#171316` (`background` in `src/palette.json`).
 - The flower is centered with generous margins and no surrounding ornaments.
 - Visually reviewed at 32, 64, 128 and 256 px, including a 64 px extension-list
