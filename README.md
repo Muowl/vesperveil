@@ -2,7 +2,8 @@
 
 <img src="assets/icon.png" alt="Vesperveil icon" width="128" height="128">
 
-A dark theme with wine-tinted surfaces, ivory text and carmine accents.
+A dark theme with wine-tinted surfaces, ivory text, carmine accents and rich
+syntax colors: warm gold, lavender, fresh green and peach.
 Subtly inspired by Ronova's palette from Genshin Impact. An independent project;
 no official artwork is included.
 
@@ -14,13 +15,15 @@ Install the extension, then open **Preferences: Color Theme** and select
 **Vesperveil Dark**. To install a downloaded `.vsix`, run
 **Extensions: Install from VSIX...** from the Command Palette.
 
-Selected VS Code editor and terminal states have been visually reviewed.
+Selected VS Code editor states have been visually reviewed, and terminal ANSI
+mappings have been checked.
 Cursor and a full interaction review are still pending.
 
 ## Screenshots
 
-Real VS Code captures with Vesperveil Dark. UI zoom is increased for readability;
-file icons and language-specific decorations depend on installed extensions.
+Real captures of Vesperveil 0.2.0 in VS Code 1.140.0 (Linux, via code-server).
+Editor text is enlarged for readability; file icons and language-specific
+decorations depend on installed extensions.
 
 ![Vesperveil Dark with TypeScript](docs/screenshots/vesperveil-typescript.png)
 
@@ -40,6 +43,10 @@ have not been verified. The theme changes colors only, not fonts or layout.
 Comments use italics; other syntax categories use normal font style.
 
 ## Development
+
+The 0.2.0 palette increases syntax and accent saturation while preserving the
+dark surfaces, ivory text, comments and selection backgrounds. See the
+[palette review](docs/saturation-review.md) for the approved values and checks.
 
 Node.js 20 or newer; no build dependencies.
 
